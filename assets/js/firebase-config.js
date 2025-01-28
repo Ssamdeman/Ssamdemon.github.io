@@ -3,16 +3,9 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebas
 import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
 
-// Function to fetch the API key from the text file
-function fetchApiKey() {
-  return fetch('assets/keys/text.txt')
-      .then(response => response.text())
-      .then(text => text.trim());
-}
-
 
 const firebaseConfig = {
-  apiKey: apiKey,
+  apiKey: assets/keys/Text.txt,
   authDomain: "v1-per-page.firebaseapp.com",
   projectId: "v1-per-page",
   storageBucket: "v1-per-page.firebasestorage.app",
